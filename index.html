@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teste</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+        function calcular(){
+            var vpa = Number(document.getElementById("valorvpa").value);
+            var lpa = Number(document.getElementById("valorlpa").value);
+            var res = Math.sqrt(vpa*lpa*22.5);
+            
+            
+            var div = document.getElementById("divResultado");
+             
+            div.innerText =  res.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>VPA:</label>
+        <input type="text" id="valorvpa"/><br>
+        <label>LPA:</label>
+        <input type="text" id="valorlpa"/>
+        <button id="btnEnviar" onclick="calcular()" >Calcular</button>
+    </div>
+  <br>
+    <div id="divResultado">
+      </br>
+      </br>
+  
+  <h3>OBS: Nessa calculadora o<br> 
+    		ponto substitui a vírgula<br>
+  		  Ex: 2.30 e não 2,30</h3>
+  		
+    </div>
+</body>
+</html>
